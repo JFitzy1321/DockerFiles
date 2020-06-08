@@ -1,8 +1,0 @@
-#!/bin/sh
-
-echo "Creating zip package from the build artifacts for Octopus Deploy"
-VERSION="$(date +'%Y.%m.%d').$BITBUCKET_BUILD_NUMBER"
-PACKAGE="$OCTOPUS_PACKAGE_NAME.$VERSION.zip"
-octo pack --id $OCTOPUS_PACKAGE_NAME --version $VERSION --basePath dist/touchpoint-frontend/ --outFolder $BITBUCKET_CLONE_DIR/out --format zip
-octo push --package $BITBUCKET_CLONE_DIR/out/$PACKAGE --server $OCTOPUS_URL --apiKey $OCTOPUS_API_KEY --space $OCTOPUS_SPACE --overwrite-mode OverwriteExisting
-
