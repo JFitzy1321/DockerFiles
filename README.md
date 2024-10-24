@@ -1,1 +1,1 @@
-# Repo for misc dockerfiles
+# Knowledge dump of Docker things
