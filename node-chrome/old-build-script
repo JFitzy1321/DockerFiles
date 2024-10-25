@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # If you're on windows, you can run this from git bash
 IMAGE_TAG="joefitzgibbons1/tpt-node-chrome:1.0"

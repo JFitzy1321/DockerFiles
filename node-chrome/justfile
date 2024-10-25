@@ -1,0 +1,8 @@
+@_default:
+    just --list --unsorted
+
+build:
+    # docker build --rm --no-cache
+
+run: build
+    # docker run --rm -it
